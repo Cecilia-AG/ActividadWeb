@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listas</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="body">
+
+<header class="header">
+	<nav>
+		<div>
+			<ul>
+				<li><a href="Votos.html">Votos</a></li>
+				<li><a href="Suma.html">Suma</a></li>
+       			<li><a href="Factorial.html">Factorial</a></li>
+				<li><a href="Calculadora.html">Calculadora</a></li>
+        		<li><a href="Cajas.html">Cajas</a></li> 
+
+        		<li><a href="bordes.html">imagen c/bordes</a></li>
+        		<li><a href="tarjetas.html">Creacion de tarjetas</a></li>
+        		<li><a href="index.html">Inicio</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+	<div align="center" style="color: black;">
+	<section>
+		<ol id="lista">
+			<li>Opcion 1</li>
+			<li>Opcion 2</li>
+			<li>Opcion 3</li>
+		</ol>
+	
+
+	<button align="center" type="button" onclick="insertar();" id="btn">Insertar opcion</button>
+
+	</section>
+	</div>
+
+	<script type="text/javascript">
+		
+		let i=4;
+		function insertar(){
+
+			let elemento=document.createElement("li");
+			let texto=document.createTextNode("Opcion " + i);
+			elemento.appendChild(texto);
+			let lista=document.getElementById("lista");
+			lista.appendChild(elemento);
+
+			i++;
+		}
+
+
+
+	</script>
+
+</body>
+</html>
