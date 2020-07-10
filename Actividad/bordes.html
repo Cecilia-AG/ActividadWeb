@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Borde</title>
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+</head>
+<body class="bod">
+
+<header class="header">
+  <nav>
+    <div>
+      <ul>
+        <li><a href="Votos.html">Votos</a></li>
+        <li><a href="Suma.html">Suma</a></li>
+        <li><a href="Factorial.html">Factorial</a></li>
+        <li><a href="Calculadora.html">Calculadora</a></li>
+        <li><a href="Cajas.html">Cajas</a></li> 
+
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="tarjetas.html">Creacion de tarjetas</a></li>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+	
+
+<div align="center" id="imagen">
+	<img src="img.jpg" style="border-style: outset; border-color: rgb(100,0,0);">
+	
+</div>
+
+<div align="center">
+
+<input type="radio" name="tema" value="double" onchange="document.getElementById('imagen').style.borderStyle= this.value">Linea delgada
+<input type="radio" name="tema" value="dashed" onchange="document.getElementById('imagen').style.borderStyle= this.value">Punteado largo
+<input type="radio" name="tema" value="dotted" onchange="document.getElementById('imagen').style.borderStyle= this.value">Punteado
+<input type="radio" name="tema" value="solid" onchange="document.getElementById('imagen').style.borderStyle= this.value">Solido
+
+<input type="radio" name="tema" value="outset" onchange="document.getElementById('imagen').style.borderStyle= this.value">Degradado
+<input type="color" id="favcolor" name="favcolor" onchange="document.getElementById('imagen').style.borderColor= this.value">
+
+</div>
+<style type="text/css">
+	body{
+
+	}
+	#divImg{
+		padding-left: 2%;
+		padding-top: 39%;
+	}
+	img{
+		width: 500px;
+		margin-left: : 20%; 
+		margin-top: : 4%;
+						
+	}
+	
+
+</body>
+</html>
